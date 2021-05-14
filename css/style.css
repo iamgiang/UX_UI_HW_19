@@ -2,9 +2,10 @@ h1, h2, h3, h4, p, li {
     font-family: 'Roboto', sans-serif;
 }
 
-/*body {
-    background-color: black;
-}*/
+/* background colour */
+body {
+    background-color: #1B1F25;
+}
 
 /* navbar */
 /* Elements to line up next to each */
@@ -21,25 +22,48 @@ h1, h2, h3, h4, p, li {
 }
 
 /* primary navidation */
+/* Style the navbar 
 nav {
+    overflow: hidden;
+    background-color: #11161C;
     width: 70%;
     padding: 1%;
     text-align: right;
+} */
+
+/* primary navidation */
+/* Style the navbar */
+.navBar {
+    background-color: #11161C;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Primary Navigation */
+/* Styling navList */
+.navList {
+    list-style-type: none; /* remove bullet points */
+}
+
+/* Placing list items side by side */
+/* Display nav list items side by sides */
+.navList .navItem {
+    display: inline-block; /*displaying side by side */
+}
+
+/* Primary Navigation 
 .primaryNav {
-    width: 50%; /* align unordered list in its container to the right */
+    width: 50%; /* align unordered list in its container to the right 
     margin-left: auto;
-}
+} */
 
-/* giving navigation menu padding */
+/* giving navigation menu padding 
 .inline-block {
     padding-top: 1%;
     padding-right: 16px;
     padding-bottom: 1%;
     padding-left: 16px
-}
+}*/
 
 /*  hero image  */
 .heroImg {
@@ -58,8 +82,6 @@ nav {
     display: flex;
     width: 100%;
 }
-
-
 
 .flexContainer div {
     width: 33%;
@@ -96,27 +118,6 @@ img {
 
 /* My Work */
 /* Convert my work <section> tag into a grid container.*/
-/* Item1 gets the name "myArea" and spands all five columns in a five columns grid layout */
-
-/*.item1 {
-    grid-area: myArea;
-    float: left;
-} 
-.workGrid {
-    display: grid; 
-    grid-template-areas:'myArea myArea ...'
-    grid-template-columns: 2fr 1fr;
-}
-
-.item2 {
-    grid-area: myArea2;
-    float: right;
-} 
-.workGrid {
-    display: grid; 
-    grid-template-areas:'... myArea2 myAre2a myArea2'
-}*/
-
 .workGrid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -126,6 +127,7 @@ img {
 /* Button Styling */
 .buttonKeyline {
     border-radius: 25px;
+    background-color: Transparent;
     border: 2px solid #CF9C98;
     padding: 8px;
     width: 200px;
@@ -154,9 +156,8 @@ footer ul {
     .flexContainer {
         flex-direction: column;
     }
+
     .flexContainer div{
         width: 100%;    
     }
-
 }
-

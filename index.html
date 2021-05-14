@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="css/style.css"> 
     <!-- google fonts -->
@@ -11,20 +11,29 @@
     <title>Giang Nguyen Portfolio</title>
 </head>
 <body>
+
+    <!-- Primary Navigation-->
     <header class="navigation">
 
         <!-- navbar -->
-        <div class="inline-block logo">
-            <img src="images/Logo-Primary.svg" alt="Giang Nguyen logo">
-        </div>
-        <nav class="inline-block">
-            <ul class="primaryNav">
-                <li class="inline-block">About</li>
-                <li class="inline-block"><a href="skills.html">Skills</a></li>
-                <li class="inline-block"><a href="work.html">Work</a></li>
-                <li class="inline-block">Contact</li>
+        <nav class="navBar">
+            <div class="logo">
+                <img src="images/Logo-Secondary.svg" alt="Giang Nguyen logo">
+            </div>
+            <ul class="navList">
+                <li class="listItem">
+                    <a>Home</a>
+                </li>
+                <li class="listItem">
+                    <a>Work</a>
+                </li>
+                <li class="listItem">
+                    <a>Contact</a>
+                </li>
             </ul>
         </nav>
+
+
 
         <!-- hero image -->
         <section class="heroImg">
@@ -32,11 +41,9 @@
                 <img src="images/Me.svg" alt="Giang Nguyen photo">
                 <h1>Hi, I am Giang, a UX/UI Designer</h1>
                 <p>I craft design experiences for people and care about the details. I bring a creative problem-solving approach to product design.</p>
-                <button class="buttonKeyline"><a href="">Download Resume</a></button>
+                <button id="resumeButton" class="buttonKeyline"><a href="#">Download Resume</a></button>
             </div>
         </section>
-        
-        <!-- footer -->
         <footer>
             <ul>
                 <li class="inline-block">About</li>
@@ -47,4 +54,10 @@
         </footer>
     </header>
 </body>
+
+<!-- Add jquery-3.6.0.js script -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+<!-- Creating in index.js script -->
+<script src="js/index.js"></script>"
+
 </html>
