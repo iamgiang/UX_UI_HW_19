@@ -1,5 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 h1, h2, h3, h4, p, li {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 /* background colour */
@@ -7,73 +12,66 @@ body {
     background-color: #1B1F25;
 }
 
-/* navbar */
-/* Elements to line up next to each */
-.inline-block {
-    display: inline-block; /* navbar to line up next to each other */
-    vertical-align: top; /* ensure all elements align next to one another */
+/* primary navidation */
+
+/* Navigation hover */
+.navList .listItem a:hover {
+    color: #CF9C98;
 }
 
-/* fill the width of our container */
-.logo {
-    width: 20%;
-    padding: 1%;
+/* align logo */
+.logo img{
+    height: 32px; 
+    /*justify-content: space-around;*/
+    padding:1%;
     text-align: center;
+    text-decoration: none;
 }
 
-/* primary navidation */
-/* Style the navbar 
-nav {
-    overflow: hidden;
+.navBar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #11161C;
-    width: 70%;
-    padding: 1%;
-    text-align: right;
-} */
-
-/* primary navidation */
-/* Style the navbar */
-.navBar {
-    background-color: #11161C;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
+    padding:0px 40px;
+    height: 80px;
 }
 
-/* Styling navList */
+/* Navbar list*/
 .navList {
-    list-style-type: none; /* remove bullet points */
+    display: flex;
+    list-style-type: none; /* removing bullet points from list */  
 }
 
-/* Placing list items side by side */
-/* Display nav list items side by sides */
-.navList .navItem {
-    display: inline-block; /*displaying side by side */
+/* Navbar links */
+.navList .listItem {
+    display: inline-block; /* displaying list items side by side */
+    padding: 24px 16px; /* giving navigation menu padding top bottom 24px left right 16px*/
+} 
+
+.navBar a {
+    float: left;   
+    color: #ffffff; /* all of the achor tags on the navBar white */
+    text-decoration: none; /* removing underline */
 }
 
-/* Primary Navigation 
-.primaryNav {
-    width: 50%; /* align unordered list in its container to the right 
-    margin-left: auto;
-} */
+/* Current page with a different colour in nagivation*/
+.currentPg a {
+    color: #CF9C98 !important;
+    font-weight: 500;
+}
 
-/* giving navigation menu padding 
-.inline-block {
-    padding-top: 1%;
-    padding-right: 16px;
-    padding-bottom: 1%;
-    padding-left: 16px
-}*/
+/* Hamburger menu */
+
 
 /*  hero image  */
-.heroImg {
+.content {
     height: 600px;
     padding: 25px;
 }
 
-.content {
-    width: 500px;
-    margin: 0 auto;
+.heroImg {
+    padding: 16px;
 }
 
 /* My Skills */
@@ -129,30 +127,82 @@ img {
     border-radius: 25px;
     background-color: Transparent;
     border: 2px solid #CF9C98;
-    padding: 8px;
     width: 200px;
     height: 50px;
+    margin: 32px 8px 16px 8px;
+}
+
+.buttonKeyline a {
+    text-decoration: none;
     font-size: 16px;
     color: #CF9C98;
-    margin: 8px 8px 32px 8px;
-  }
+    display: block;
+    padding: 14px 8px;
+}
 
-/* footer */
-footer {
-    background-color: #11161C;
-    padding: center;
+/* footer navigation*/
+
+/* divider line */
+hr.footerDivider {
+    border-top: 1px solid #CF9C98;
+    
+}
+
+/* remove border white line */
+hr {
+    border: none;
+}
+
+/* bottom foooter */
+/* align logo */
+.logoFooter img{
+    height: 16px; 
+    /*justify-content: space-around;*/
+    padding:1%;
     text-align: center;
+    text-decoration: none;
 }
 
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: center;
-    color: #ffffff;
+.navBarFooter {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11161C;
+    padding:0px 20px;
+    height: 40px;
 }
+
+/* Footer copywrite*/
+.navCopywriteFooter {
+    display: flex;
+}
+
+.navBarFooter a {
+    float: left;   
+    color: #ffffff; /* all of the achor tags on the navBar white */
+    text-decoration: none; /* removing underline */
+    font-size: 12px;
+}
+
+/* Current page with a different colour in nagivation*/
+.currentPg a {
+    color: #CF9C98 !important;
+    font-weight: 500;
+}
+
+/* Hamburger menu */
+
 
 /* Mobile Media Query */
 @media only screen and (max-width: 600px) {
+    .logo div{
+        height: 30px !important;
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
     .flexContainer {
         flex-direction: column;
     }
