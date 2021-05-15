@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 h1, h2, h3, h4, p, li {
     font-family: 'Maven Pro', sans-serif;
 }
@@ -85,20 +80,23 @@ body {
     width: 40%;
     margin-top: calc(45vh - 200px);
     color: #ffffff;
+    padding-left: 40px;
 }
 .heroImg img{
     position: absolute;
     right: 40px;
-    height: 100%;
+    height: 50%;
     z-index: 10;
-    height: 200px;
-    /*padding: 16px;*/
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* My Skills */
 .mySkills {
     background-color: #ffffff;
+    padding: 24px 40px 16px 40px;
 }
+
 /* Responsive using flex */
 .flexContainer {
     display: flex;
@@ -110,7 +108,7 @@ body {
 }
 
 .flexContainer .container {
-    width: 92%;
+    width: 80%;
 }
 
 /* Card CSS*/
