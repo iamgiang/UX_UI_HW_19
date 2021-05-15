@@ -16,3 +16,22 @@ $(document).ready(function(){
     console.log("You clicked on #resumeButton");
   });
 
+
+
+/* On scroll, sticky will work */
+window.onscroll = function() {triggerStickyNavBar()};
+
+// Get the navbar
+var navbar = document.getElementById("navbarid");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function triggerStickyNavBar() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}

@@ -12,21 +12,23 @@
 </head>
 <body>
 
-    <!-- Primary Navigation-->
+    <!-- Primary Navigation in header-->
     <header class="navigation">
-
-        <!-- navbar -->
-        <div class="inline-block logo">
-            <img src="images/Logo-Primary.svg" alt="Giang Nguyen logo">
-        </div>
-        <nav class="inline-block">
-            <ul class="primaryNav">
-                <li class="inline-block"><a href=index.html>Home</a></li>
-                <li class="inline-block"><a href="skills.html">Skills</a></li>
-                <li class="inline-block"><a href="work.html">Work</a></li>
-                <li class="inline-block">Contact</li>
+        <div id="navbarid" class ="navBar">
+             <div class="navList logo">
+                <a href="index.html">
+                    <img src="images/Logo-Secondary.svg" alt="Giang Nguyen logo">
+                </a>
+            </div>
+            <ul class="navList">
+                <li class="listItem currentPg"><a>Home</a></li>
+                <li class="listItem"><a href="skills.html">About</a></li>
+                <li class="listItem"><a href="work.html">Work</a></li>
+                <li class="listItem"><a href="#">Contact</a></li>
             </ul>
         </nav>
+    </header>
+    <!-- End Primary Navigation in header-->
 
         <!-- MY UX Skills section -->
         <section class="mySkills">
@@ -112,17 +114,25 @@
         </section>
         <!-- End MY UX Skills section -->
             
-        <!-- Footer navigation -->
-        <footer>
-            <ul>
-                <li class="inline-block">About</li>
-                <li class="inline-block">Skills</li>
-                <li class="inline-block">Work</li>
-                <li class="inline-block">Contact</li>
-            </ul>
+        <!-- <footer> -->
+        <hr class="footerDivider">
+        <footer class="navigation">
+            <nav class="navBarFooter">
+                <div class="navCopywriteFooter">
+                    <p><a> © Giang Nguyen 2021</a></p>
+                </div>
+                <div class="navListFooter logoFooter">
+                    <a href="index.html">
+                        <img src="images/Logo-Secondary.svg" alt="Giang Nguyen logo">
+                    </a>
+                </div>
+            </nav>
         </footer>
-        <!-- End footer -->
-    </header>
 
 </body>
+
+<!-- Add jquery-3.6.0.js script -->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+<!-- Creating in index.js script -->
+<script src="js/index.js"></script>
 </html>

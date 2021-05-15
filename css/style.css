@@ -22,7 +22,7 @@ body {
 /* align logo */
 .logo img{
     height: 32px; 
-    /*justify-content: space-around;*/
+    /* justify-content: space-around; */
     padding:1%;
     text-align: center;
     text-decoration: none;
@@ -36,6 +36,12 @@ body {
     padding:0px 40px;
     height: 80px;
 }
+/* Sticky */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 /* Navbar list*/
 .navList {
@@ -64,17 +70,34 @@ body {
 /* Hamburger menu */
 
 
-/*  hero image  */
+/*  hero section  */
 .content {
-    height: 600px;
-    padding: 25px;
+    position: relative;
+    height: calc(100vh - 200px);
+    margin-top: 40px;
 }
 
-.heroImg {
-    padding: 16px;
+/* about me */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    margin-top: calc(45vh - 200px);
+    color: #ffffff;
+}
+.heroImg img{
+    position: absolute
+    right: -80px;
+    height: 100%;
+    z-index: 10;
+    /*padding: 16px;*/
 }
 
 /* My Skills */
+.mySkills {
+    background-color: #ffffff;
+}
 /* Responsive using flex */
 .flexContainer {
     display: flex;
@@ -115,6 +138,10 @@ img {
 }
 
 /* My Work */
+.myWork {
+    background-color: #ffffff;
+}
+
 /* Convert my work <section> tag into a grid container.*/
 .workGrid {
     display: grid;
