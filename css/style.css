@@ -87,10 +87,11 @@ body {
     color: #ffffff;
 }
 .heroImg img{
-    position: absolute
-    right: -80px;
+    position: absolute;
+    right: 40px;
     height: 100%;
     z-index: 10;
+    height: 200px;
     /*padding: 16px;*/
 }
 
