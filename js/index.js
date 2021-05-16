@@ -35,6 +35,48 @@ $("#contactButton a").hover(function(){
   $(this).css("color", "#CF9C98");
 });
 
+/* View Project 1 button */
+$("#projectButton1").hover(function(){
+  $(this).css("background-color", "#CF9C98");
+}, function(){
+  $(this).css("background-color", "#1B1F25");
+});
+
+/* Change text colour of button on hover */
+$("#projectButton1 a").hover(function(){
+  $(this).css("color", "#1B1F25");
+}, function(){
+  $(this).css("color", "#CF9C98");
+});
+
+/* View Project 2 button */
+$("#projectButton2").hover(function(){
+  $(this).css("background-color", "#CF9C98");
+}, function(){
+  $(this).css("background-color", "#1B1F25");
+});
+
+/* Change text colour of button on hover */
+$("#projectButton2 a").hover(function(){
+  $(this).css("color", "#1B1F25");
+}, function(){
+  $(this).css("color", "#CF9C98");
+});
+
+/* View Project 3 button */
+$("#projectButton3").hover(function(){
+  $(this).css("background-color", "#CF9C98");
+}, function(){
+  $(this).css("background-color", "#1B1F25");
+});
+
+/* Change text colour of button on hover */
+$("#projectButton3 a").hover(function(){
+  $(this).css("color", "#1B1F25");
+}, function(){
+  $(this).css("color", "#CF9C98");
+});
+
 /* Hamburger menu */
 const menuBtn = document = document.querySelector('.hamburgerBtn'); //querySelector is calling on the menuBtn in CSS
 

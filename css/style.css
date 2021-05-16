@@ -141,12 +141,12 @@ body {
     width: 40%;
     color: #ffffff;
     line-height: 150%;
-
 }
+
 .heroImg img{
     position: absolute;
-    right: 40px;
-    /*height: 50%;*/
+    right: 16px;
+    width: 50%;
     z-index: 10;
     justify-content: space-between;
     align-items: center;
@@ -174,6 +174,18 @@ body {
     padding: 24px 24px;
 }
 
+/* About me */
+/* Responsive using flex */
+.flexContainerAbout {
+    display: flex;
+    width: 100%;
+}
+
+.flexContainerAbout div {
+    width: 90%;
+    font-size: 14px;
+}
+
 /* Card CSS*/
 .card {
     /* Add shadows to create the "card" effect */
@@ -196,7 +208,21 @@ img {
 
 /* My Work */
 .myWork {
-    background-color: #ffffff;
+    background-color: #1B1F25;
+    padding: 24px 80px 80px 80px;
+    color: #ffffff;
+}
+
+.myWork .item1 img {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.myWork .item2 img {
+    border-radius: 8px 8px 8px 8px;
+}
+
+.myWork .item3 img {
+    border-radius: 8px 8px 8px 8px;
 }
 
 /* Convert my work <section> tag into a grid container.*/
@@ -274,8 +300,6 @@ hr {
     font-weight: 500;
 }
 
-/* Hamburger menu */
-
 /* Mobile Media Query at 800px */
 @media only screen and (max-width: 800px) {
     /* content image responsive to display before about me */
@@ -293,15 +317,15 @@ hr {
         align-items: center;
         margin: auto;
         z-index: 100 !important;
-    }
-    .content .heroImg img {
         text-align: center;
     }
+
     /* about me responsive */
     .introduction {
         position:static !important;
         width: 100% !important;
         margin: 0 auto;
+    }
 }
 
 /* Mobile Media Query at 775px */
