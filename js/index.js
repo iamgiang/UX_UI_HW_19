@@ -6,7 +6,8 @@ $("#resumeButton").hover(function(){
   console.log("You hovered on #resumeButton");
 });
 
-/* Change background colour of button on hover */
+/* Resume button
+Change background colour of button on hover */
 $("#resumeButton").hover(function(){
   $(this).css("background-color", "#CF9C98");
 }, function(){
@@ -20,6 +21,27 @@ $("#resumeButton a").hover(function(){
   $(this).css("color", "#CF9C98");
 });
 
+/* Contact me button */
+$("#contactButton").hover(function(){
+  $(this).css("background-color", "#CF9C98");
+}, function(){
+  $(this).css("background-color", "#ffffff");
+});
+
+/* Change text colour of button on hover */
+$("#contactButton a").hover(function(){
+  $(this).css("color", "#ffffff");
+}, function(){
+  $(this).css("color", "#CF9C98");
+});
+
+/* Hamburger menu */
+const menuBtn = document = document.querySelector('.hamburgerBtn'); //querySelector is calling on the menuBtn in CSS
+
+// Main toggle
+menuBtn.addEventListener('click',()=>{
+  menuBtn.classList.toggle("open");
+})
 
 /* On scroll, sticky will work 
 window.onscroll = function() {triggerStickyNavBar()};

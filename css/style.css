@@ -1,5 +1,11 @@
+/* Globl */
+* {
+    box-sizing: border;
+}
+
 h1, h2, h3, h4, p, li {
     font-family: 'Maven Pro', sans-serif;
+    line-height: 150%;
 }
 
 /* background colour */
@@ -10,6 +16,57 @@ body {
 }
 
 /* primary navidation */
+
+/* hamburger menu*/
+.hamburgerBtn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items:center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 1; /* to ensure it stays on top */
+}
+
+/*drawing the hamburger icon */
+.menuBtnIcon,
+.menuBtnIcon::before,
+.menuBtnIcon::after {
+    width: 1.5rem;
+    height: 0.1rem;
+    background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuBtnIcon::before,
+.menuBtnIcon::after {
+    content: "";
+    position: absolute;
+}
+
+.menuBtnIcon::before {
+    transform: translateY(-0.5rem);
+}
+
+.menuBtnIcon::after {
+    transform: translateY(0.5rem);
+}
+
+/* animation */
+/* middle line in the hamburger will move two lines to the right and disappear */
+.hamburgerBtn.open .menuBtnIcon {
+    transform:translateX(2rem); 
+    background-color: transparent;
+}
+/* top and bottom line from hamburger to form an X */
+.hamburgerBtn.open .menuBtnIcon::before {
+    transform: rotate(45deg) translate(-1.5rem, 1.5rem);
+}
+
+.hamburgerBtn.open .menuBtnIcon::after {
+    transform: rotate(-45deg) translate(-1.5rem, -1.5rem);
+}
 
 /* Navigation hover */
 .navList .listItem a:hover {
@@ -33,12 +90,13 @@ body {
     padding:0px 40px;
     height: 80px;
 }
+
 /* Sticky 
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 /* Navbar list*/
 .navList {
@@ -76,18 +134,19 @@ body {
 
 /* about me */
 .introduction {
+    position: absolute;
+    margin-top: calc(45vh - 200px);
     display: flex;
     flex-direction: column;
-    position: absolute;
     width: 40%;
-    margin-top: calc(45vh - 200px);
     color: #ffffff;
+    line-height: 150%;
 
 }
 .heroImg img{
     position: absolute;
     right: 40px;
-    height: 50%;
+    /*height: 50%;*/
     z-index: 10;
     justify-content: space-between;
     align-items: center;
@@ -106,12 +165,16 @@ body {
 }
 
 .flexContainer div {
-    width: 33%;
+    width: 90%;
+    font-size: 14px;
 }
 
-.flexContainer .container {
-    width: 80%;
+.container {
+    width: 100%;
+    padding: 24px 24px;
 }
+
+
 
 /* Card CSS*/
 .card {
@@ -131,11 +194,6 @@ img {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-  
-/* Add some padding inside the card container */
-.container {
-    padding: 8px 16px 8px 16px;
 }
 
 /* My Work */
@@ -227,7 +285,7 @@ hr {
         height: auto !important;
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 40px !important;
+        margin-top: 20px !important;
     }
     /* hero image responsive */
     .content .heroImg img{
@@ -248,16 +306,20 @@ hr {
         margin: 0 auto;
 }
 
-/* Mobile Media Query at 600px */
-@media only screen and (max-width: 600px) {
+/* Mobile Media Query at 775px */
+@media only screen and (max-width: 750px) {
     .logo div{
         height: 30px !important;
     }
 
-    .hamburger {
-        display: block !important;
+    .hamburgerBtn {
+        display: flex;
     }
 
+    .container {
+        width: 90% !important;
+        padding:32px 32px !important;
+    }
     .flexContainer {
         flex-direction: column;
     }
