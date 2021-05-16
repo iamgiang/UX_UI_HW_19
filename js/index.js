@@ -25,12 +25,12 @@ $("#resumeButton a").hover(function(){
 $("#contactButton").hover(function(){
   $(this).css("background-color", "#CF9C98");
 }, function(){
-  $(this).css("background-color", "#ffffff");
+  $(this).css("background-color", "#f2f2f2");
 });
 
 /* Change text colour of button on hover */
 $("#contactButton a").hover(function(){
-  $(this).css("color", "#ffffff");
+  $(this).css("color", "#f2f2f2");
 }, function(){
   $(this).css("color", "#CF9C98");
 });

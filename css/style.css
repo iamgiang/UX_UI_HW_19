@@ -135,7 +135,7 @@ body {
 /* about me */
 .introduction {
     position: absolute;
-    margin-top: calc(45vh - 200px);
+    margin-top: calc(35vh - 200px);
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -154,7 +154,7 @@ body {
 
 /* My Skills */
 .mySkills {
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     padding: 24px 40px 16px 40px;
 }
 
@@ -173,8 +173,6 @@ body {
     width: 100%;
     padding: 24px 24px;
 }
-
-
 
 /* Card CSS*/
 .card {
