@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <!-- linking stylesheet -->
     <link rel="stylesheet" href="css/style.css"> 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- font aweome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>About Me</title>
+    <title>Giang Nguyen Portfolio</title>
 </head>
 <body>
 
@@ -22,9 +22,16 @@
                     <img src="images/Logo-Secondary.svg" alt="Giang Nguyen logo">
                 </a>
             </div>
+
+             <!-- Hamburger navigation -->
+            <div class="hamburgerBtn">
+                <div class="menuBtnIcon"></div>
+            </div>
+            
+
             <ul class="navList">
                 <li class="listItem"><a href="index.html">Home</a></li>
-                <li class="listItem currentPg"><a href="about.html">About</a></li>
+                <li class="listItem currentPg"><a>About</a></li>
                 <li class="listItem"><a href="work.html">Work</a></li>
                 <li class="listItem"><a href="#">Contact</a></li>
             </ul>
@@ -32,45 +39,45 @@
     </header>
     <!-- End Primary Navigation in header-->
 
-    <!-- About Me section -->
-    <section class="mySkills">
-        <h1>A Little About Me</h1>
-        <p>I took a life changing trip to Nepal to work as an educator for women and children in Nepal.</p>
-        <!--  My About Me section coded using CSS flex -->
-        <div class="flexContainerAbout">
+   <!-- About Me section -->
+   <section class="mySkills">
+    <h1>A Little About Me</h1>
+    <p>I took a life changing trip to Nepal to work as an educator for women and children in Nepal.</p>
+    <!--  My About Me section coded using CSS flex -->
+    <div class="flexContainerAbout">
 
-            <!-- Placing inside a card 1 -->
-            <div class="card">
-                <img src="images/Nepal-women.jpg" alt="User Research" style="width:100%">
-                <!-- Container -->
-                <div class="container">
-                    <h3>Women's Empowerment</h3>
-                    <p>Some of the women whom I loved teaching English to during my time in Nepal. This photo was taken after my final lesson and the beautiful ladies blew me kisses as I left.</p>
-                </div>
-                <!-- End Container -->
+        <!-- Placing inside a card 1 -->
+        <div class="card">
+            <img src="images/Nepal-women.jpg" alt="User Research" style="width:100%">
+            <!-- Container -->
+            <div class="container">
+                <h3>Women's Empowerment</h3>
+                <p>Some of the women whom I loved teaching English to during my time in Nepal. This photo was taken after my final lesson and the beautiful ladies blew me kisses as I left.</p>
             </div>
-            <!-- End card 1 -->
-
-            <!-- Placing inside a card 2 -->
-            <div class="card">
-                <img src="images/Nepal-kids.jpg" alt="User Interface Design" style="width:100%">
-                <div class="container">
-                    <h3>Childrens Orphange</h3>
-                    <p>Meeting these children brought joy to my heart. I helped them with their studies and arts & craft. During my time I also organised for a basketball hoop to be built in the orphanage. This photo was taken when I came to help paint their boarding house.</p>
-                </div>
-                <!-- End container -->
-            </div>
-            <!-- End of card 2 -->
+            <!-- End Container -->
         </div>
-        <!--  End of My UX Skills section coded using CSS flex -->
+        <!-- End card 1 -->
 
-        <button id="contactButton" class="buttonKeyline"><a href="#contactSection">Get in touch</a></button>
+        <!-- Placing inside a card 2 -->
+        <div class="card">
+            <img src="images/Nepal-kids.jpg" alt="User Interface Design" style="width:100%">
+            <div class="container">
+                <h3>Childrens Orphange</h3>
+                <p>Meeting these children brought joy to my heart. I helped them with their studies and arts & craft. During my time I also organised for a basketball hoop to be built in the orphanage. This photo was taken when I came to help paint their boarding house.</p>
+            </div>
+            <!-- End container -->
+        </div>
+        <!-- End of card 2 -->
+    </div>
+    <!--  End of About Me section coded using CSS flex -->
 
-    </section>
-    <!-- End MY UX Skills section -->
-            
+    <button id="contactButton" class="buttonKeyline"><a href="#contactSection">Get in touch</a></button>
+
+</section>
+<!-- End About Me section -->
+
     <!-- Contact Information -->
-    <section class="contactMe">
+    <section id="contactSection" class="contactMe">
         <div class="contact">
             <H3>Let's connect</H3>
             <div class="waysToConnect">

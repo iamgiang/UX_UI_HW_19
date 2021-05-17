@@ -381,6 +381,14 @@ hr {
 
 /* Mobile Media Query at 800px */
 @media only screen and (max-width: 800px) {
+    .logo div{
+        height: 30px !important;
+    }
+
+    .hamburgerBtn {
+        display: flex;
+    }
+
     /* content image responsive to display before about me */
     .content {
         height: auto !important;
@@ -406,17 +414,6 @@ hr {
         position:static !important;
         width: 100% !important;
         margin: 0 auto;
-    }
-}
-
-/* Mobile Media Query at 775px */
-@media only screen and (max-width: 750px) {
-    .logo div{
-        height: 30px !important;
-    }
-
-    .hamburgerBtn {
-        display: flex;
     }
 
     .container {
