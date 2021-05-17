@@ -429,6 +429,14 @@ hr {
         width: 100%;    
     }
 
+    .flexContainerAbout {
+        flex-direction: column;
+    }
+
+    .flexContainerAbout div{
+        width: 100%;    
+    }
+
     .flexContainerProjects {
         flex-direction: column;
     }
