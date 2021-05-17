@@ -276,7 +276,7 @@ img {
 .waysToConnect {
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: 300px;
     text-align: right;
     padding-bottom: 24px;
 }
