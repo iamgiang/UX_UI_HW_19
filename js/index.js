@@ -77,6 +77,20 @@ $("#projectButton3 a").hover(function(){
   $(this).css("color", "#CF9C98");
 });
 
+/* View All Projects homepage button */
+$("#projectButtonAll").hover(function(){
+  $(this).css("background-color", "#CF9C98");
+}, function(){
+  $(this).css("background-color", "#1B1F25");
+});
+
+/* Change text colour of button on hover */
+$("#projectButtonAll a").hover(function(){
+  $(this).css("color", "#1B1F25");
+}, function(){
+  $(this).css("color", "#CF9C98");
+});
+
 // Hamburger menu 
 const menuBtn = document = document.querySelector('.hamburgerBtn'); //querySelector is calling on the menuBtn in CSS
 

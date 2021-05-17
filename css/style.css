@@ -152,7 +152,7 @@ body {
     align-items: center;
 }
 
-/* My Skills */
+/* My Skills Homepage */
 .mySkills {
     background-color: #f2f2f2;
     padding: 24px 80px 16px 80px;
@@ -173,6 +173,25 @@ body {
     width: 100%;
     padding: 8px 24px;
 }
+
+/* My Projects Homepage */
+.myProjects {
+    background-color: #1B1F25;
+    color: #ffffff;
+    padding: 24px 80px 16px 80px;
+}
+
+.flexContainerProjects {
+    display: flex;
+    width: 100%;
+}
+
+.flexContainerProjects div {
+    width: 90%;
+    font-size: 14px;
+}
+
+/* Do I need above? */
 
 /* About me */
 /* Responsive using flex */
@@ -264,9 +283,12 @@ img {
 }
 
 /* Contact information */
+.contactMe {
+    background-color: #11161C;
+}
 .contact {
     color: #ffffff;
-    padding: 24px 20px;
+    padding: 40px 20px;
 }
 
 .contact h3 {
