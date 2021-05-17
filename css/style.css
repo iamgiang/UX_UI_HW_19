@@ -171,7 +171,7 @@ body {
 
 .container {
     width: 100%;
-    padding: 24px 24px;
+    padding: 8px 24px;
 }
 
 /* About me */
@@ -196,6 +196,11 @@ body {
     margin: 24px 8px 24px 8px;
 }
 
+.card a {
+    text-decoration: none;
+    color: #11161C;
+}
+
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 8px 8px 0 0;
@@ -206,11 +211,20 @@ img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* work CTA on card */
+.workCTA {
+    font-size: 14px;
+    /*color: #1e90ff;*/
+    color: #CF9C98;
+    font-weight: 500;
+}
+
 /* My Work */
 .myWork {
     background-color: #1B1F25;
     padding: 24px 80px 80px 80px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .myWork .item1 img {
