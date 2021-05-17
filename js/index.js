@@ -77,7 +77,7 @@ $("#projectButton3 a").hover(function(){
   $(this).css("color", "#CF9C98");
 });
 
-/* Hamburger menu */
+// Hamburger menu 
 const menuBtn = document = document.querySelector('.hamburgerBtn'); //querySelector is calling on the menuBtn in CSS
 
 // Main toggle
